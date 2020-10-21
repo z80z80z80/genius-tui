@@ -102,10 +102,6 @@ def search_title_by_artist(data):
     input(f"\n{color.GREEN}Hit [Enter] to go back. {color.END}")
     search_artist(1)
 
-tui_tree = [[start],
-            [search_artist, search_title],
-            [search_title_by_artist]]
-
 def exit(num):
     sys.exit()
 

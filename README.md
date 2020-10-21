@@ -21,17 +21,17 @@ Before using this, you'll need an access token for the Genius API. Follow this g
 After getting your token, replace YOUR\_TOKEN\_GOES\_HERE with your token in line 4 of genius.py.
 
 ### Optional: Generate alias for easy access
-#### bash
+- bash
 ```bash
 echo 'alias genius-tui="python '$PWD'/genius.py"' >> ~/.bashrc
 source ~/.bashrc
 ```
-#### zsh
+- zsh
 ```bash
 echo 'alias genius-tui="python '$PWD'/genius.py"' >> ~/.zshrc
 source ~/.zshrc
 ```
-#### fish
+- fish
 ```bash
 echo 'alias genius-tui="python '$PWD'/genius.py"' >> ~/.config/fish/config.fish
 source ~/.config/fish/config.fish
