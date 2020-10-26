@@ -1,7 +1,7 @@
 import lyricsgenius
 import os, sys
 
-TOKEN = "YOUR_TOKEN_GOES_HERE"
+TOKEN = "TOKEN_GOES_HERE"
 genius = lyricsgenius.Genius(TOKEN, verbose=False)
 
 class color:
@@ -81,7 +81,7 @@ def choose_song(data):
     artist = data[0]
     num = data[1]-1
     song = artist.songs[num]
-    print(f"{song.artist} - {song.title} - {song.album} ({song.year})\n")
+    print(f"{color.GREEN}{song.artist} - {song.title} - {song.album} ({song.year})\n{color.END}")
     print(song.lyrics)
 
     input(f"\n{color.GREEN}Hit [Enter] to go back. {color.END}")
@@ -96,7 +96,7 @@ def search_title_by_artist(data):
         print("\nCouldn't find anything.\n")
     else:
         os.system("clear")
-        print(f"{song.artist} - {song.title} - {song.album} ({song.year})\n")
+        print(f"{color.GREEN}{song.artist} - {song.title} - {song.album} ({song.year})\n{color.END}")
         print(song.lyrics)
         
     input(f"\n{color.GREEN}Hit [Enter] to go back. {color.END}")
